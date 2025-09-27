@@ -21,8 +21,8 @@ window.onload = function() {
         const minutes = now.getMinutes();
         const hours = now.getHours();
 
-        const minuteDeg = minutes * 6;
-        const hourDeg = (hours % 12) * 30 + minutes * 0.5;
+        const minuteDeg = 0;
+        const hourDeg = (urlParams.get('resultado')) * 30;
 
         document.getElementById("minute").style.transform = `rotate(${minuteDeg}deg)`;
         document.getElementById("hour").style.transform = `rotate(${hourDeg}deg)`;
