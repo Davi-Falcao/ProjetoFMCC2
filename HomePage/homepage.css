@@ -1,7 +1,7 @@
 body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+      background: linear-gradient(135deg, #c2e9fb, #565175);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -19,9 +19,9 @@ body {
     width: 300px;
     height: 80px;
     padding: 5px;
-    border-radius: 40px;
+    border-radius: 20px;
     color: rgb(221, 218, 218);
-    background-color: rgb(15, 39, 172);
+    background-color: #67b79e;
     margin: auto;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
     margin-top: 20px;
@@ -34,6 +34,7 @@ body {
     cursor: pointer;
     transform: scale(1.2);
 }
+
 
 /* Input com borda animada */
 .input-demo-card {
@@ -65,8 +66,8 @@ body {
             padding: 16px 20px;
             border: 2px solid transparent;
             border-radius: 12px;
-            background: rgb(98, 148, 187);
-            color: #e2e8f0;
+            background: #538a95;
+            color: #fff;
             font-size: 16px;
             outline: none;
             transition: all 0.3s ease;
@@ -104,7 +105,7 @@ body {
             right: 2px;
             bottom: 2px;
             border-radius: 10px;
-            background: rgba(70, 158, 92, 0.95);
+            background: #67b79e;
             z-index: 0;
         }
 
