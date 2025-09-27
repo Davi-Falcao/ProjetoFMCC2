@@ -230,33 +230,26 @@ body {
 
     .mark {
       position: absolute;
-      width: 6px;
-      height: 6px;
+      width: 8px;
+      height: 8px;
       background: #222;
       border-radius: 50%;
-      opacity: 0.6;
+      opacity: 0.7;
+      z-index: 10;
     }
 
-    .mark12 {
-      top: 12px;
-      left: 50%;
-      transform: translateX(-50%);
+    .clock-number {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      color: #222;
+      background: transparent;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 24px;
+      user-select: none;
+      z-index: 10;
     }
 
-    .mark3 {
-      right: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
 
-    .mark6 {
-      bottom: 12px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .mark9 {
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
