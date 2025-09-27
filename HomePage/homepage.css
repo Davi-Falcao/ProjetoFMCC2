@@ -1,4 +1,4 @@
-    body {
+body {
       margin: 0;
       padding: 0;
       background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
@@ -34,3 +34,178 @@
     cursor: pointer;
     transform: scale(1.2);
 }
+
+/* Input com borda animada */
+.input-demo-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.input-type-title {
+            color: #3b3b3b;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 10px;
+        }
+
+.animated-border-container {
+            position: relative;
+            margin: 20px 0;
+        }
+
+.animated-border-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            background: rgb(98, 148, 187);
+            color: #e2e8f0;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+
+.animated-border-input::placeholder {
+            color: rgba(226, 232, 240, 0.6);
+        }
+
+.animated-border-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 12px;
+            padding: 2px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+            background-size: 300% 300%;
+            animation: gradient-shift 3s ease infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+.animated-border-container::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 10px;
+            background: rgba(70, 158, 92, 0.95);
+            z-index: 0;
+        }
+
+ .animated-border-input:focus {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+.animated-border-container:focus-within::before {
+            opacity: 1;
+        }
+
+@keyframes gradient-shift {
+       0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+    }
+
+
+/* Relogio */
+.clock {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hand {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform-origin: bottom center;
+      transform: rotate(0deg);
+      border-radius: 6px;
+    }
+
+    .hour {
+      width: 6px;
+      height: 70px;
+      background: #333;
+      z-index: 3;
+    }
+
+    .minute {
+      width: 4px;
+      height: 100px;
+      background: #444;
+      z-index: 2;
+    }
+
+    .second {
+      width: 2px;
+      height: 120px;
+      background: crimson;
+      z-index: 1;
+    }
+
+    .center-dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 14px;
+      height: 14px;
+      background: #111;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+    }
+
+    .mark {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #222;
+      border-radius: 50%;
+      opacity: 0.6;
+    }
+
+    .mark12 {
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .mark3 {
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .mark6 {
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .mark9 {
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
