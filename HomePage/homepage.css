@@ -95,6 +95,7 @@ body {
         }
 
 .animated-border-container {
+            
             display: flex;
             align-items: center;
             margin-bottom: 8px;
