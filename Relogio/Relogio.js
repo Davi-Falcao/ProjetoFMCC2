@@ -5,6 +5,7 @@ window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const resultadoStr = urlParams.get('resultado');
 
+    
     for (let i = 0; i < 12; i++) {
       const angle = (i * 30) * (Math.PI / 180);
       const x = center + radius * Math.sin(angle) - 12; 
