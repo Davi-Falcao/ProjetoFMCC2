@@ -19,7 +19,7 @@ botaoCalcular.addEventListener('click', () => {
     });
 
     if (resultado !== null) {
-        const resultadoModulo = resultado % 12;
+        const resultadoModulo = ((resultado % 12) + 12) % 12; // garantir resultado positivo
         operacao += ` mod 12 = ${resultadoModulo}`;
         window.location.href = `../../Relogio/Relogio.html?resultado=${encodeURIComponent(operacao)}`;
     } else {
