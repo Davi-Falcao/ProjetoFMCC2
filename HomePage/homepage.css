@@ -7,12 +7,14 @@ body {
       align-items: center;
       height: 100vh;
       font-family: sans-serif;
+      font-weight: bold;
+
     }
 
 .tituloInicio{
     text-align: center;
     font-size: 2.5rem;
-    color: #131313;
+    color: #000000;
     margin-bottom: 80px;
 
 }
@@ -67,7 +69,7 @@ body {
     padding: 5px;
     border-radius: 20px;
     color: rgb(221, 218, 218);
-    background-color: #67b79e;
+    background-color: #37ac87;
     margin: auto;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
     margin-top: 20px;
