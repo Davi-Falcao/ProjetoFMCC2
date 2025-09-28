@@ -6,11 +6,21 @@
     <title>Relógio Analógico</title>
     <link rel="stylesheet" href="../HomePage/homepage.css"> 
     <style>
-        /* Resultado em preto e negrito */
         #resultado {
-            color: #000000; /* preto */
+            color: #000000; 
             font-weight: bold;
             margin-left: 5px;
+        }
+        .autor {
+            margin-top: 20px;
+            font-size: 1rem;
+            font-style: italic;
+        }
+        .outros-nomes {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #555;
         }
     </style>
 </head>
@@ -27,15 +37,22 @@
 
     <div class="resultado-congruencia" id="resultado-congruencia">
         <h1>O resultado de <span id="resultado"></span></h1>
+        <!-- Autor principal -->
+        <p class="autor">Trabalho apresentado por: </p>
+        <!-- Outros nomes -->
+        <pre class="outros-nomes">
+Davi Falcão
+Eduardo Heroizo
+Francisco Vildimar
+Wilson Paduá
+        </pre>
     </div>
 
     <script src="Relogio.js"></script>
     <script>
-        // Pega o valor do parâmetro "resultado" da URL
         const urlParams = new URLSearchParams(window.location.search);
         const resultado = urlParams.get('resultado');
 
-        // Coloca o resultado no <span>
         if (resultado !== null) {
             document.getElementById('resultado').textContent = resultado;
         }
