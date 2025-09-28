@@ -1,40 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exponenciação Mod 12</title>
-<link rel="stylesheet" href="../homepage.css">
-<style>
-    .animated-border-container { margin-bottom: 10px; }
-    .botao-excluir { margin-left: 5px; }
-    .botao-circular { display: inline-block; margin-top: 10px; cursor: pointer; padding: 5px 10px; border-radius: 50%; background-color: #007BFF; color: white; font-weight: bold; }
-    .botao { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #28a745; color: white; cursor: pointer; }
-    .input-demo-card { margin-bottom: 20px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicacao</title>
+    <link rel="stylesheet" href="../homepage.css">
 </head>
 <body>
-
-<div class="container">
-    <div class="input-demo-card">
-        <h2 class="input-type-title">Digite os números que serão exponenciados</h2>
-
+    <div class="container">
+        <div class="input-demo-card">
+        <h2 class="input-type-title">Digite os números que serão elevados</h2>
         <div id="inputs-container">
             <div class="animated-border-container">
                 <input type="number" class="animated-border-input" placeholder="Número 1">
             </div>
             <div class="animated-border-container">
                 <input type="number" class="animated-border-input" placeholder="Número 2">
+                </div>
             </div>
         </div>
-
-        <!-- Botão para adicionar novos inputs -->
-        <div class="botao-circular" id="add-input">+</div>
-    </div>
-
-    <!-- Botão calcular -->
+    <button class="botao-voltar" onclick="window.history.back()">&lt;</button>
     <div class="botao" id="CALCULAR">CALCULAR</div>
+ </div>       
 
-    <!-- Botão voltar -->
-    <button class="botao-voltar" onclick="window.history.back()">&lt; Voltar</button>
-</div>
+    <script src="exponenciacao.js"></script>
+</body>
+</html>
