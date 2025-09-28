@@ -30,8 +30,8 @@ botaoCalcular.addEventListener('click', () => {
     }
   });
 
-  const resultadoModulo = soma % 12;
-  operacao += ` mod 12 = ${resultadoModulo}`;
+  const resultado = ((soma % 12) + 12) % 12; // garante que o mod de um resultado positivo
+  operacao += ` mod 12 = ${resultado}`;
 
   window.location.href = `../../Relogio/Relogio.html?resultado=${encodeURIComponent(operacao)}`;
 });
