@@ -158,12 +158,12 @@ body {
   right: 2px;
   bottom: 2px;
   border-radius: 10px;
-  background: #67b79e;
+  background: #1d6da1;
   z-index: 0;
 }
 
 .animated-border-input:focus {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08);  
 }
 
 .animated-border-container:focus-within::before {
