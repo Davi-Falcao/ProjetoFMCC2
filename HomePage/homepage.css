@@ -181,6 +181,7 @@ body {
 .clock-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin: 30px;
     justify-content: center;
