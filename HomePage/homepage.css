@@ -80,7 +80,7 @@ body {
 
 .botao:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -183,6 +183,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 30px;
+    justify-content: center;
+
 }
 
 .clock {
