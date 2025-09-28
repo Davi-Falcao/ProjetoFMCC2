@@ -5,24 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio Analógico</title>
     <link rel="stylesheet" href="../HomePage/homepage.css"> 
-    <style>
-        #resultado {
-            color: #000000; 
-            font-weight: bold;
-            margin-left: 5px;
-        }
-        .autor {
-            margin-top: 20px;
-            font-size: 1rem;
-            font-style: italic;
-        }
-        .outros-nomes {
-            margin-top: 10px;
-            font-size: 0.9rem;
-            font-style: italic;
-            color: #555;
-        }
-    </style>
 </head>
 <body>
     <div class="clock-container">
@@ -35,27 +17,16 @@
 
     <button class="botao-voltar" onclick="window.history.back()">&lt;</button>
 
-    <div class="resultado-congruencia" id="resultado-congruencia">
+    <div class="Autores-container" id="autores">
         <h1>O resultado de <span id="resultado"></span></h1>
-        <!-- Autor principal -->
         <p class="autor">Trabalho apresentado por: </p>
-        <!-- Outros nomes -->
         <pre class="outros-nomes">
-Davi Falcão
-Eduardo Heroizo
-Francisco Vildimar
-Wilson Paduá
+            Davi Falcão
+            Eduardo Heroizo
+            Francisco Vildimar
+            Wilson Paduá
         </pre>
     </div>
-
     <script src="Relogio.js"></script>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const resultado = urlParams.get('resultado');
-
-        if (resultado !== null) {
-            document.getElementById('resultado').textContent = resultado;
-        }
-    </script>
 </body>
 </html>

@@ -9,6 +9,14 @@ body {
       font-family: sans-serif;
     }
 
+.tituloInicio{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #131313;
+    margin-bottom: 80px;
+
+}
+
 
 .botao-excluir {
     margin-left: 8px;
@@ -277,4 +285,26 @@ body {
       background: #47737c;
     }
 
+  /* Nome dos grupos */
+    .Autores-container {
+      text-align: left;
+      margin-top: 20px;
+    }
 
+    #resultado {
+      color: #000000; 
+      font-weight: bold;
+      margin-left: 5px;
+    }
+    .autor {
+      margin-top: 20px;
+      font-size: 1rem;
+      font-style: italic;
+    }
+    
+    .outros-nomes {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #555;
+    }
