@@ -1,5 +1,5 @@
-const botaoCalcular = document.querySelector('#CALCULAR'); // apenas querySelector
-const botaoAdicionar = document.querySelector('#add-input'); // apenas querySelector
+const botaoCalcular = document.querySelector('#CALCULAR'); 
+const botaoAdicionar = document.querySelector('#add-input');
 let inputCount = 2;
 
 function adicionarInput() {
@@ -15,9 +15,7 @@ function adicionarInput() {
   container.appendChild(div);
 }
 
-botaoAdicionar.addEventListener('click', adicionarInput);
-
-botaoCalcular.addEventListener('click', () => {
+function somar() {
   const inputs = document.querySelectorAll('#inputs-container input');
   let soma = 0;
   let operacao = "";
@@ -30,8 +28,12 @@ botaoCalcular.addEventListener('click', () => {
     }
   });
 
-  const resultado = ((soma % 12) + 12) % 12; // garante que o mod de um resultado positivo
+  const resultado = ((soma % 12) + 12) % 12; 
   operacao += ` mod 12 = ${resultado}`;
 
   window.location.href = `../../Relogio/Relogio.html?resultado=${encodeURIComponent(operacao)}`;
-});
+}
+
+botaoAdicionar.addEventListener('click', adicionarInput);
+
+botaoCalcular.addEventListener('click', somar);

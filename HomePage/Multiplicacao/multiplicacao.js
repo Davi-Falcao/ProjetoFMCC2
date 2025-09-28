@@ -1,6 +1,7 @@
 // Utiliza o querySelector para pegar o botao com id CALCULAR e o botao de adicionar input
 const botaoCalcular = document.querySelector('#CALCULAR'); 
 const botaoAdicionar = document.querySelector('#add-input'); 
+// Contador para numerar os inputs adicionados dinamicamente e tornar os dois primeiros obrigatorios
 let inputCount = 2;
 
 // Função para adicionar um novo campo de input com o botão de exclusão ao lado
@@ -24,6 +25,7 @@ function multiplicar() {
     // Pega todos os inputs dentro do container e guarda na variavel constante inputs
     const inputs = document.querySelectorAll('#inputs-container input');
     let produto = 1;
+    // String para montar a operação que será exibida no relógio
     let operacao = "";
 
     //Para cada input ele pega o valor, converte para inteiro e verifica se é um numero
