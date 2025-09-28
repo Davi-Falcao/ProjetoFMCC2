@@ -23,7 +23,7 @@ botaoCalcular.forEach(btn => btn.addEventListener('click', () => {
     if (!Number.isNaN(v)) soma += v;
   });
 
-  const resultado = ((soma % 12) + 12) % 12;
+  const resultado = (soma % 12);
 
   window.location.href = `../../Relogio/Relogio.html?resultado=${resultado}`;
 }));

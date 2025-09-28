@@ -30,7 +30,7 @@ botaoCalcular.forEach((n) => {
             produto *= valor;
         });
 
-        let resultado = ((produto % 12) + 12) % 12;
+        let resultado = (produto % 12);
 
         window.location.href = `../../Relogio/Relogio.html?resultado=${resultado}`;
     });
