@@ -14,11 +14,10 @@ body {
 .tituloInicio{
     text-align: center;
     font-size: 2.5rem;
-    color: #000000;
+    color: #3b3b3b;
     margin-bottom: 80px;
 
 }
-
 
 .botao-excluir {
     margin-left: 8px;
@@ -43,7 +42,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #538a95;
+    background: #5b88a5;
     color: #fff;
     border: none;
     font-size: 1.5rem;
@@ -118,7 +117,7 @@ body {
             padding: 16px 20px;
             border: 2px solid transparent;
             border-radius: 12px;
-            background: #538a95;
+            background: #5b88a5;
             color: #fff;
             font-size: 16px;
             outline: none;
@@ -296,8 +295,8 @@ body {
       margin-top: 20px;
     }
 
-    #resultado {
-      color: #000000; 
+    .resultado {
+      color: #3b3b3b; 
       font-weight: bold;
       margin-left: 5px;
     }
