@@ -1,26 +1,22 @@
 window.onload = function() {
       const clock = document.querySelector('.clock');
-      const radius = 130; // ajuste para os números ficarem dentro do relógio
+      const radius = 130; 
       const center = 160;
 
       for (let i = 0; i < 12; i++) {
         const angle = (i * 30) * (Math.PI / 180);
-        const x = center + radius * Math.sin(angle) - 12; // ajuste para centralizar o número
+        const x = center + radius * Math.sin(angle) - 12; 
         const y = center - radius * Math.cos(angle) - 12;
 
         const number = document.createElement('div');
         number.className = 'clock-number';
-        number.textContent = i; // mostra de 0 a 11
+        number.textContent = i; 
         number.style.left = `${x}px`;
         number.style.top = `${y}px`;
         clock.appendChild(number);
       }
 
       function updateClock() {
-        const now = new Date();
-        const minutes = now.getMinutes();
-        const hours = now.getHours();
-
         const minuteDeg = 0;
         const hourDeg = (urlParams.get('resultado')) * 30;
 
