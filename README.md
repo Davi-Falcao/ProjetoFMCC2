@@ -13,3 +13,5 @@ O projeto exemplifica operações modulares (soma, multiplicação e exponencia�
 ## Tecnologias
 - **JavaScript**: lógica de operações e manipulação dinâmica de inputs.
 - **HTML/CSS**: estrutura e interface visual interativa.
+
+<a href='https://projetofmcc2.github.io/ProjetoFMCC2/'> Link do projeto </a>
